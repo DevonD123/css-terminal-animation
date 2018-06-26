@@ -1,0 +1,183 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+
+
+    .terminal{
+        border-radius: 6px;
+        position: relative;
+        // border-top: 1px solid #E0DFE0;
+        .top-bar{
+            position: absolute;
+            background-color: #E0DFE0;
+            top:-1px;
+            right: -1px;
+            left: -1px;
+            height: 22.5px;
+            border-top-right-radius: 6px;
+            border-top-left-radius: 6px;
+            border: 1 px solid white;
+            border-bottom: 1px solid grey;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .dots{
+                position: absolute;
+                display: flex;
+                left: 10px;
+                top: 5px;
+                width: 60px;
+                justify-content: space-evenly;
+                align-items: center;
+                .dot{
+                    width: 10.5px;
+                    height: 10.5px;
+                    border-radius: 50%;
+                }
+                .red{
+                    background-color: #ED4A42;
+                }
+                .yellow{
+                    background-color: #F8BD32;
+                }
+                .green{
+                    background-color: #61CA42;
+                }
+            }
+            p{
+                color: black;
+                padding: 0;
+                margin: 0;
+                font-size: 14px;
+                // text-align: center;
+                text-shadow: none;
+                .fa-folder{
+                    //folder
+                    font-size: 16px;
+                    color:#6BCEF9;
+                }
+            }
+        }
+        // font-family: "Consolas";
+        font-family: "courier";
+        // font-family: 'Roboto', sans-serif;
+        // font-family: 'Wire One', sans-serif;
+        // letter-spacing: 3px;
+        box-shadow: -5px 26px 21px 0px rgba(0,0,0,0.21);
+        width: 702px;
+        height: 316px;;
+        padding:10px;
+        margin: 20px auto;
+        background-color:rgba(40, 40, 40, .95);
+        color:#41ff00;
+        text-shadow: 0 0 2px #41ff00;
+        p:nth-child(2){
+            animation: 6s typer steps(60);
+            overflow: hidden;
+            white-space: nowrap;
+            width: 12%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(3){
+            animation: 5s typer steps(70);
+            animation-delay: 6s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(4){ 
+            animation: 5s typer steps(70);
+            animation-delay: 10s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(5){ 
+            animation: 5s typer steps(70);
+            animation-delay: 14s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(6){ 
+            animation: 5s typer steps(70);
+            animation-delay: 20s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(7){ 
+            animation: 4s typer steps(70);
+            animation-delay: 24s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        p:nth-child(8){ 
+            animation: 5s typer steps(70);
+            animation-delay: 27s;
+            overflow: hidden;
+            white-space: nowrap;
+            width: 0%;
+            animation-fill-mode: forwards;
+        }
+        a{
+            font-family: sans-serif;
+            text-shadow: none;
+            text-decoration: none;
+        }
+        a:hover{
+            color: aqua;
+        }
+        
+        .cursor{
+            font-size: 1.1em;
+            // width: 5px;
+            // height:12px;
+            // display: inline-block;
+            color: #41ff00;
+            background-color: #41ff00;
+            animation:600ms blinker; 
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            opacity: 1;
+        }
+        .term-head{
+            font-size: 14px;
+        }
+        @keyframes blinker {
+            0%{
+                opacity:0;
+            }
+            20%{
+                opacity:0;
+            }
+            80%{
+                opacity: 1;
+            }
+            100%{
+                opacity:1;
+            }
+        }
+        @keyframes typer {
+            0% , 10%{
+                width: 12%;
+            }
+            100%{
+                width:100%;
+            }
+        }
+    }
+    
+    
+}

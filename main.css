@@ -1,0 +1,192 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
+  html .terminal, body .terminal {
+    border-radius: 6px;
+    position: relative;
+    font-family: "courier";
+    -webkit-box-shadow: -5px 26px 21px 0px rgba(0, 0, 0, 0.21);
+            box-shadow: -5px 26px 21px 0px rgba(0, 0, 0, 0.21);
+    width: 702px;
+    height: 316px;
+    padding: 10px;
+    margin: 20px auto;
+    background-color: rgba(40, 40, 40, 0.95);
+    color: #41ff00;
+    text-shadow: 0 0 2px #41ff00; }
+    html .terminal .top-bar, body .terminal .top-bar {
+      position: absolute;
+      background-color: #E0DFE0;
+      top: -1px;
+      right: -1px;
+      left: -1px;
+      height: 22.5px;
+      border-top-right-radius: 6px;
+      border-top-left-radius: 6px;
+      border: 1 px solid white;
+      border-bottom: 1px solid grey;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      html .terminal .top-bar .dots, body .terminal .top-bar .dots {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        left: 10px;
+        top: 5px;
+        width: 60px;
+        -webkit-box-pack: space-evenly;
+            -ms-flex-pack: space-evenly;
+                justify-content: space-evenly;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        html .terminal .top-bar .dots .dot, body .terminal .top-bar .dots .dot {
+          width: 10.5px;
+          height: 10.5px;
+          border-radius: 50%; }
+        html .terminal .top-bar .dots .red, body .terminal .top-bar .dots .red {
+          background-color: #ED4A42; }
+        html .terminal .top-bar .dots .yellow, body .terminal .top-bar .dots .yellow {
+          background-color: #F8BD32; }
+        html .terminal .top-bar .dots .green, body .terminal .top-bar .dots .green {
+          background-color: #61CA42; }
+      html .terminal .top-bar p, body .terminal .top-bar p {
+        color: black;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+        text-shadow: none; }
+        html .terminal .top-bar p .fa-folder, body .terminal .top-bar p .fa-folder {
+          font-size: 16px;
+          color: #6BCEF9; }
+    html .terminal p:nth-child(2), body .terminal p:nth-child(2) {
+      -webkit-animation: 6s typer steps(60);
+              animation: 6s typer steps(60);
+      overflow: hidden;
+      white-space: nowrap;
+      width: 12%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(3), body .terminal p:nth-child(3) {
+      -webkit-animation: 5s typer steps(70);
+              animation: 5s typer steps(70);
+      -webkit-animation-delay: 6s;
+              animation-delay: 6s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(4), body .terminal p:nth-child(4) {
+      -webkit-animation: 5s typer steps(70);
+              animation: 5s typer steps(70);
+      -webkit-animation-delay: 10s;
+              animation-delay: 10s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(5), body .terminal p:nth-child(5) {
+      -webkit-animation: 5s typer steps(70);
+              animation: 5s typer steps(70);
+      -webkit-animation-delay: 14s;
+              animation-delay: 14s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(6), body .terminal p:nth-child(6) {
+      -webkit-animation: 5s typer steps(70);
+              animation: 5s typer steps(70);
+      -webkit-animation-delay: 20s;
+              animation-delay: 20s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(7), body .terminal p:nth-child(7) {
+      -webkit-animation: 4s typer steps(70);
+              animation: 4s typer steps(70);
+      -webkit-animation-delay: 24s;
+              animation-delay: 24s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal p:nth-child(8), body .terminal p:nth-child(8) {
+      -webkit-animation: 5s typer steps(70);
+              animation: 5s typer steps(70);
+      -webkit-animation-delay: 27s;
+              animation-delay: 27s;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0%;
+      -webkit-animation-fill-mode: forwards;
+              animation-fill-mode: forwards; }
+    html .terminal a, body .terminal a {
+      font-family: sans-serif;
+      text-shadow: none;
+      text-decoration: none; }
+    html .terminal a:hover, body .terminal a:hover {
+      color: aqua; }
+    html .terminal .cursor, body .terminal .cursor {
+      font-size: 1.1em;
+      color: #41ff00;
+      background-color: #41ff00;
+      -webkit-animation: 600ms blinker;
+              animation: 600ms blinker;
+      -webkit-animation-iteration-count: infinite;
+              animation-iteration-count: infinite;
+      -webkit-animation-direction: alternate;
+              animation-direction: alternate;
+      opacity: 1; }
+    html .terminal .term-head, body .terminal .term-head {
+      font-size: 14px; }
+@-webkit-keyframes blinker {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@keyframes blinker {
+  0% {
+    opacity: 0; }
+  20% {
+    opacity: 0; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 1; } }
+@-webkit-keyframes typer {
+  0% , 10% {
+    width: 12%; }
+  100% {
+    width: 100%; } }
+@keyframes typer {
+  0% , 10% {
+    width: 12%; }
+  100% {
+    width: 100%; } }
+
+/*# sourceMappingURL=main.css.map */
